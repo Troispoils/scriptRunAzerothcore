@@ -40,8 +40,8 @@ startup () {
 	echo "Starting server...";
 	cd $DIRINSTALL
 	cd "bin"
-	screen -dmS login "/home/troispoils/Documents/source/azerothserv/bin/auhtserver"
-	screen -dmS world "/home/troispoils/Documents/source/azerothserv/bin/worldserver"
+	screen -dmS login /home/troispoils/Documents/source/azerothserv/bin/.authserver
+	screen -dmS world /home/troispoils/Documents/source/azerothserv/bin/.worldserver
 }
 
 stopserv () {
@@ -87,9 +87,6 @@ else
         recup_source nowipe
 fi
 
-echo "Start server";
-read
-startup
 
 ## commande launch ##
 # screen -dmS login ./auhtserver
