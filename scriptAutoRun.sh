@@ -83,6 +83,10 @@ else
         recup_source nowipe
 fi
 
+echo "Start server";
+read
+startup
+
 ## commande launch ##
 # screen -dmS login ./auhtserver
 # screen -dmS world ./worldserver
