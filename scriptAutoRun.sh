@@ -70,9 +70,12 @@ if [ -d $DIRSOURCE ] ;then
         echo "Le dossier existe deja.";
         echo "1 - Update Source";
         echo "2 - Wipe and News";
+		echo "3 - Start Server";
         read choix
         if [ $choix = "1" ] ;then
                 maj_source
+		elif [ $choix = "3" ] ;then
+                startup
         else
                 recup_source wipe
         fi
