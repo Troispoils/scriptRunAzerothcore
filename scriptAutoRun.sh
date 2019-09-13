@@ -40,8 +40,8 @@ startup () {
 	echo "Starting server...";
 	cd $DIRINSTALL
 	cd "bin"
-	screen -dmS login ./auhtserver
-	screen -dmS world ./worldserver
+	screen -dmS login "/home/troispoils/Documents/source/azerothserv/bin/auhtserver"
+	screen -dmS world "/home/troispoils/Documents/source/azerothserv/bin/worldserver"
 }
 
 stopserv () {
