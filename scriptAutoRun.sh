@@ -39,6 +39,7 @@ compiling () {
 startup () {
 	echo "Starting server...";
 	cd $DIRINSTALL
+	cd "bin"
 	screen -dmS login ./auhtserver
 	screen -dmS world ./worldserver
 }
